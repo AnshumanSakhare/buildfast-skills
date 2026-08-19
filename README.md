@@ -35,9 +35,9 @@
 
 Most "agent skills" you find online are one paragraph of advice in a markdown file. Some of these are more than that.
 
-**Ten of them are more than a single file** — reference docs the agent reads before it acts, and in six cases executable scripts it actually runs. Three ship worked example output you can open in a browser right now. Point Claude Code at `launch-audit-skill` and you get a real launch-readiness report with a verdict, not a bulleted opinion. Point it at `html-game-generator-skill` and you get a finished game in one HTML file, with menus and sound and save support.
+**Eleven of them are more than a single file** — reference docs the agent reads before it acts, and in six cases executable scripts it actually runs. Three ship worked example output you can open in a browser right now. Point Claude Code at `launch-audit-skill` and you get a real launch-readiness report with a verdict, not a bulleted opinion. Point it at `html-game-generator-skill` and you get a finished game in one HTML file, with menus and sound and save support.
 
-**The other twenty-two are tight, opinionated playbooks** — one focused `SKILL.md` that gives the agent a real point of view on one job, from neo-brutalist art direction to Mongoose index strategy. Small on disk, and the ones you'll reach for daily.
+**The other twenty-one are tight, opinionated playbooks** — one focused `SKILL.md` that gives the agent a real point of view on one job, from neo-brutalist art direction to Mongoose index strategy. Small on disk, and the ones you'll reach for daily.
 
 Every skill carries a badge saying which kind it is, so you always know what you're installing. All of them work in whatever agent you already use, and all of them install in about four seconds.
 
@@ -48,7 +48,7 @@ Every skill carries a badge saying which kind it is, so you always know what you
 Every skill installs with the open [`skills`](https://github.com/vercel-labs/skills) CLI — one command, nothing to clone:
 
 ```bash
-npx skills add https://github.com/buildfastwithai/agent-skills/tree/main/skills/startup-skills/launch-audit-skill
+npx skills add https://github.com/buildfastwithai/agent-skills/tree/main/startup-skills/launch-audit-skill
 ```
 
 Swap the trailing path for any skill in [the catalog](#the-catalog) below. Or take the whole registry at once and pick interactively:
@@ -74,12 +74,12 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[🛬 Landing Page Generator](skills/app-builder-skills/landing-page-generator-skill)** | High-converting landing pages as production HTML — with the conversion audit built in. |
-| **[🛒 Crazy Ecommerce Builder](skills/app-builder-skills/crazy-ecommerce-builder-skill)** | Anti-template storefronts with generated product photography and a real creative thesis. |
-| **[🕹️ HTML Game Generator](skills/app-builder-skills/html-game-generator-skill)** | One self-contained .html file. Menus, art, sound, particles, save support. Double-click and play. |
-| **[📸 React Screenshot Recreator](skills/app-builder-skills/react-screenshot-recreator-skill)** | Paste a screenshot. Get React + TypeScript + Tailwind that a designer can't tell apart. |
-| **[✨ Premium UI Revamp](skills/app-builder-skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. |
-| **[🗣️ Talking Avatar](skills/app-builder-skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. |
+| **[🛬 Landing Page Generator](app-builder-skills/landing-page-generator-skill)** | High-converting landing pages as production HTML — with the conversion audit built in. |
+| **[🛒 Crazy Ecommerce Builder](app-builder-skills/crazy-ecommerce-builder-skill)** | Anti-template storefronts with generated product photography and a real creative thesis. |
+| **[🕹️ HTML Game Generator](app-builder-skills/html-game-generator-skill)** | One self-contained .html file. Menus, art, sound, particles, save support. Double-click and play. |
+| **[📸 React Screenshot Recreator](app-builder-skills/react-screenshot-recreator-skill)** | Paste a screenshot. Get React + TypeScript + Tailwind that a designer can't tell apart. |
+| **[✨ Premium UI Revamp](app-builder-skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. |
+| **[🗣️ Talking Avatar](app-builder-skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. |
 
 ### 🎨 Design Systems <sub><sup>8 skills · <code>ui-skills/</code></sup></sub>
 
@@ -87,14 +87,14 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[🏛️ Boutique Frontend Designer](skills/ui-skills/boutique-frontend-designer-skill)** | The anti-slop default. Agency-grade interfaces instead of unmodified shadcn. |
-| **[🧩 Tailwind Component Factory](skills/ui-skills/tailwind-component-factory-skill)** | Accessible, headless-friendly Tailwind primitives with the ARIA already correct. |
-| **[📣 Bold SaaS Marketing UI](skills/ui-skills/bold-saas-marketing-ui-skill)** | Landing pages that convert without looking like every other Y Combinator homepage. |
-| **[📰 Editorial Web Layout](skills/ui-skills/editorial-web-layout-skill)** | Magazine typography, asymmetric columns, print rhythm. Content-first and confident. |
-| **[🪟 Glass UI System](skills/ui-skills/glass-ui-system-skill)** | Glassmorphism with actual depth hierarchy — not a blur filter on everything. |
-| **[🕴️ Minimal Luxury UI](skills/ui-skills/minimal-luxury-ui-skill)** | Restraint as a design decision. Premium type, sparse composition, precise spacing. |
-| **[🧱 Neo-Brutalism Web](skills/ui-skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. |
-| **[📺 Retro Futurist Web](skills/ui-skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. |
+| **[🏛️ Boutique Frontend Designer](ui-skills/boutique-frontend-designer-skill)** | The anti-slop default. Agency-grade interfaces instead of unmodified shadcn. |
+| **[🧩 Tailwind Component Factory](ui-skills/tailwind-component-factory-skill)** | Accessible, headless-friendly Tailwind primitives with the ARIA already correct. |
+| **[📣 Bold SaaS Marketing UI](ui-skills/bold-saas-marketing-ui-skill)** | Landing pages that convert without looking like every other Y Combinator homepage. |
+| **[📰 Editorial Web Layout](ui-skills/editorial-web-layout-skill)** | Magazine typography, asymmetric columns, print rhythm. Content-first and confident. |
+| **[🪟 Glass UI System](ui-skills/glass-ui-system-skill)** | Glassmorphism with actual depth hierarchy — not a blur filter on everything. |
+| **[🕴️ Minimal Luxury UI](ui-skills/minimal-luxury-ui-skill)** | Restraint as a design decision. Premium type, sparse composition, precise spacing. |
+| **[🧱 Neo-Brutalism Web](ui-skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. |
+| **[📺 Retro Futurist Web](ui-skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. |
 
 ### 📈 Startup & Growth <sub><sup>3 skills · <code>startup-skills/</code></sup></sub>
 
@@ -102,9 +102,9 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[🔍 LaunchAudit](skills/startup-skills/launch-audit-skill)** | Give it a URL. Get a verdict: ready to launch, fix these first, or not yet. |
-| **[🎯 Customer Finder](skills/startup-skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. |
-| **[📊 Startup Blueprint](skills/startup-skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. |
+| **[🔍 LaunchAudit](startup-skills/launch-audit-skill)** | Give it a URL. Get a verdict: ready to launch, fix these first, or not yet. |
+| **[🎯 Customer Finder](startup-skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. |
+| **[📊 Startup Blueprint](startup-skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. |
 
 ### 🧱 Backend & Data <sub><sup>4 skills · <code>backend-skills/</code></sup></sub>
 
@@ -112,10 +112,10 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[🔌 MCP Server Builder](skills/backend-skills/mcp-server-builder-skill)** | Design and ship Model Context Protocol servers that don't leak your database. |
-| **[🔐 MERN Auth Best Practices](skills/backend-skills/mern-auth-best-practices-skill)** | JWT and Auth.js flows with refresh rotation and cookie strategy that actually holds. |
-| **[🗄️ Mongoose Schema Architect](skills/backend-skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. |
-| **[⚡ Next.js Route Handler](skills/backend-skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. |
+| **[🔌 MCP Server Builder](backend-skills/mcp-server-builder-skill)** | Design and ship Model Context Protocol servers that don't leak your database. |
+| **[🔐 MERN Auth Best Practices](backend-skills/mern-auth-best-practices-skill)** | JWT and Auth.js flows with refresh rotation and cookie strategy that actually holds. |
+| **[🗄️ Mongoose Schema Architect](backend-skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. |
+| **[⚡ Next.js Route Handler](backend-skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. |
 
 ### 📝 Docs & Research <sub><sup>3 skills · <code>docs-skills/</code></sup></sub>
 
@@ -123,9 +123,9 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[📖 README Architect](skills/docs-skills/readme-architect-skill)** | Production-quality READMEs with badges, setup, usage and contribution guidance. |
-| **[🔬 Research Synthesizer](skills/docs-skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. |
-| **[🎞️ Deck Outline Generator](skills/docs-skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. |
+| **[📖 README Architect](docs-skills/readme-architect-skill)** | Production-quality READMEs with badges, setup, usage and contribution guidance. |
+| **[🔬 Research Synthesizer](docs-skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. |
+| **[🎞️ Deck Outline Generator](docs-skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. |
 
 ### 🛠️ Agent Workflow <sub><sup>8 skills · <code>workflow-skills/</code></sup></sub>
 
@@ -133,14 +133,14 @@ No config file. No API key. No account.
 
 | Skill | What it does |
 |:--|:--|
-| **[🚢 Ship It](skills/workflow-skills/ship-it-skill)** | Turns any repo into a public-facing open-source project ready for a launch tweet. |
-| **[🤝 Claude → Codex Handoff](skills/workflow-skills/claude-to-codex-handoff-skill)** | Package a whole conversation into a zip another agent can pick up cold. |
-| **[🧪 Test Strength](skills/workflow-skills/test-strength-skill)** | Coverage lies. Mutation testing tells you whether your tests would notice a bug. |
-| **[🕵️ Agent Output Critic](skills/workflow-skills/agent-output-critic-skill)** | A second agent whose only job is to find what the first one got wrong. |
-| **[📌 Git Conventional Commits](skills/workflow-skills/git-conventional-commits-skill)** | Commits that explain why, and PR descriptions with a real test plan. |
-| **[🧠 Prompt Optimizer (CoT)](skills/workflow-skills/prompt-optimizer-cot-skill)** | Rewrites vague tasks into prompts that reason properly. |
-| **[✅ Tool Use Validator](skills/workflow-skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. |
-| **[🐧 Linux Kernel Troubleshooter](skills/workflow-skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. |
+| **[🚢 Ship It](workflow-skills/ship-it-skill)** | Turns any repo into a public-facing open-source project ready for a launch tweet. |
+| **[🤝 Claude → Codex Handoff](workflow-skills/claude-to-codex-handoff-skill)** | Package a whole conversation into a zip another agent can pick up cold. |
+| **[🧪 Test Strength](workflow-skills/test-strength-skill)** | Coverage lies. Mutation testing tells you whether your tests would notice a bug. |
+| **[🕵️ Agent Output Critic](workflow-skills/agent-output-critic-skill)** | A second agent whose only job is to find what the first one got wrong. |
+| **[📌 Git Conventional Commits](workflow-skills/git-conventional-commits-skill)** | Commits that explain why, and PR descriptions with a real test plan. |
+| **[🧠 Prompt Optimizer (CoT)](workflow-skills/prompt-optimizer-cot-skill)** | Rewrites vague tasks into prompts that reason properly. |
+| **[✅ Tool Use Validator](workflow-skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. |
+| **[🐧 Linux Kernel Troubleshooter](workflow-skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. |
 
 <br>
 
@@ -148,7 +148,7 @@ No config file. No API key. No account.
 
 These are plain [Agent Skills](https://code.claude.com/docs/en/skills) folders — a `SKILL.md` plus whatever it needs. Anything that reads that format can use them: Claude Code, Claude Desktop, Codex, Cursor, opencode.
 
-The `skills` CLI detects what you have installed and puts the folder in the right place. If you'd rather not use it, copy the folder by hand — `git clone` this repo and drop `skills/<category>/<name>-skill` into your agent's skills directory. That's the whole install.
+The `skills` CLI detects what you have installed and puts the folder in the right place. If you'd rather not use it, copy the folder by hand — `git clone` this repo and drop `<category>-skills/<name>-skill` into your agent's skills directory. That's the whole install.
 
 Using **Cowork**? Skills are account-level rather than on disk — install locally first, then upload the skill folder in the Cowork UI.
 
@@ -195,15 +195,16 @@ The format is Anthropic's [Agent Skills](https://code.claude.com/docs/en/skills)
 
 ```text
 agent-skills/
-├── README.md             this file — the catalog
-└── skills/               32 skills, grouped by category
-    ├── app-builder-skills/   6   finished, runnable products
-    ├── ui-skills/            8   design systems and art direction
-    ├── startup-skills/       3   GTM, launch readiness, financials
-    ├── backend-skills/       4   APIs, schemas, auth
-    ├── docs-skills/          3   READMEs and research synthesis
-    └── workflow-skills/      8   agent tooling and process
+├── README.md                 this file — the catalog
+├── app-builder-skills/   6   finished, runnable products
+├── ui-skills/            8   design systems and art direction
+├── startup-skills/       3   GTM, launch readiness, financials
+├── backend-skills/       4   APIs, schemas, auth
+├── docs-skills/          3   READMEs and research synthesis
+└── workflow-skills/      8   agent tooling and process
 ```
+
+32 skills across six category folders, each sitting at the root of the repo — so a skill's path is just `<category>-skills/<name>-skill`.
 
 That's the whole repo. No build step, no manifest, no installer to maintain — each skill folder is self-describing, and the `skills` CLI reads them directly off GitHub.
 
@@ -218,7 +219,7 @@ The bar: a real `SKILL.md` whose `description` earns its trigger, and at least o
 ```bash
 git clone https://github.com/buildfastwithai/agent-skills
 cd agent-skills
-mkdir -p skills/<category>/my-thing-skill   # note the -skill suffix
+mkdir -p <category>-skills/my-thing-skill   # note the -skill suffix
 # write SKILL.md, add a row to the catalog table, open a PR
 ```
 
