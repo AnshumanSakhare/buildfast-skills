@@ -31,13 +31,7 @@ If you add `agents/openai.yaml`, its `default_prompt` must name the exact skill,
 
 ## Before opening a pull request
 
-Run:
-
-```bash
-python scripts/validate_repo.py
-```
-
-Then run every changed executable helper and the real build or output check the skill promises. Include:
+Run every changed executable helper and the real build or output check the skill promises. Include:
 
 - the user request or scenario you tested;
 - the command(s) you ran;

@@ -120,8 +120,6 @@ buildfast-skills/
 ├── premium-ui-revamp-skill/
 ├── talking-avatar-skill/
 ├── threejs-game-generator-skill/
-├── scripts/
-│   └── validate_repo.py
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
@@ -141,20 +139,12 @@ skill-name/
 
 ## Validate locally
 
-The repository has no CI workflow and no deploy configuration. Run the same local checks contributors use:
-
-```bash
-python scripts/validate_repo.py
-```
-
-For packages with executable helpers, also run their focused checks:
+For packages with executable helpers, run their focused checks:
 
 ```bash
 python -m py_compile landing-page-generator-skill/scripts/*.py
 python -m py_compile talking-avatar-skill/scripts/*.py
 ```
-
-The validator checks skill names, frontmatter, install commands, agent metadata, relative Markdown links, and stale paths from the old repository identity.
 
 ## Contributing
 
