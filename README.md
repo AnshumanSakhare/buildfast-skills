@@ -1,329 +1,205 @@
-<p align="center">
-  <strong>Drop-in <code>SKILL.md</code> capabilities for your coding agent.<br>Six categories, one <code>npx</code> command, zero config.</strong>
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://www.linkedin.com/company/build-fast-with-ai">
-    <img src="https://img.shields.io/badge/-Follow%20on%20LinkedIn-0077B5?logo=linkedin&style=flat-square" alt="LinkedIn">
-  </a>
-  <a href="https://twitter.com/BuildFastWithAI">
-    <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
-  </a>
-  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=social" alt="Star this repo">
-  </a>
-</p>
+# ⚡ BuildFast Skills
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Format-SKILL.md-000000?style=for-the-badge" alt="SKILL.md">
-  <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude">
-  <img src="https://img.shields.io/badge/Cowork-6E56CF?style=for-the-badge" alt="Cowork">
-  <img src="https://img.shields.io/badge/Codex-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Codex">
-  <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor">
-  <img src="https://img.shields.io/badge/npx-install%20in%204s-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npx install">
-  <img src="https://img.shields.io/badge/License-MIT-0984E3?style=for-the-badge" alt="MIT">
-</p>
+**Five production-grade Agent Skills that turn plain-language briefs into finished web experiences.**
 
-<p align="center">
-  <a href="#quickstart"><b>Quickstart</b></a> &nbsp;·&nbsp;
-  <a href="#the-catalog"><b>The catalog</b></a> &nbsp;·&nbsp;
-  <a href="#use-it-in-any-agent"><b>Any agent</b></a> &nbsp;·&nbsp;
-  <a href="#faq"><b>FAQ</b></a>
-</p>
+Brief in. Working landing page, storefront, interface revamp, talking avatar, or Three.js game out.
+
+[Quickstart](#quickstart) · [Browse the skills](#the-five-skills) · [How it works](#how-a-buildfast-skill-works) · [Contribute](#contributing)
+
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-5-111111?style=flat-square)](#the-five-skills)
+[![Install with npx](https://img.shields.io/badge/install-npx%20skills-CB3837?style=flat-square&logo=npm)](#quickstart)
+[![MIT License](https://img.shields.io/badge/license-MIT-0f766e?style=flat-square)](LICENSE)
+
+</div>
 
 ---
 
-Most "agent skills" you find online are one paragraph of advice in a markdown file. Some of these are more than that.
+Most skill repositories are collections of prompts. BuildFast Skills is deliberately smaller and more complete: each package carries the workflow, constraints, references, scripts, or starter files needed to finish a specific job.
 
-**Eleven of them are more than a single file** — reference docs the agent reads before it acts, and in six cases executable scripts it actually runs. Three ship worked example output you can open in a browser right now. Point Claude Code at `launch-audit-skill` and you get a real launch-readiness report with a verdict, not a bulleted opinion. Point it at `html-game-generator-skill` and you get a finished game in one HTML file, with menus and sound and save support.
-
-**The other twenty-one are tight, opinionated playbooks** — one focused `SKILL.md` that gives the agent a real point of view on one job, from neo-brutalist art direction to Mongoose index strategy. Small on disk, and the ones you'll reach for daily.
-
-Every skill carries a badge saying which kind it is, so you always know what you're installing. All of them work in whatever agent you already use, and all of them install in about four seconds.
-
-<br>
+There is no framework to adopt and no hosted service to depend on. Install one skill, describe the outcome you want, and let your coding agent work inside the project you already have.
 
 ## Quickstart
 
-Every skill installs with the open [`skills`](https://github.com/vercel-labs/skills) CLI — one command, nothing to clone:
+Browse all five skills and choose interactively:
 
 ```bash
-npx skills add https://github.com/buildfastwithai/agent-skills/tree/main/startup-skills/launch-audit-skill
+npx skills add buildfastwithai/buildfast-skills
 ```
 
-Swap the trailing path for any skill in [the catalog](#the-catalog) below. Or take the whole registry at once and pick interactively:
+Install one skill directly:
 
 ```bash
-npx skills add buildfastwithai/agent-skills
+npx skills add buildfastwithai/buildfast-skills --skill premium-ui-revamp-skill
 ```
 
-Then restart your agent and just talk to it:
+Add `--global` if you want the skill available across projects. Then restart your agent and ask for the outcome in normal language:
 
-> *"Audit https://myproduct.com before launch."*
+> “Use premium-ui-revamp-skill to make this dashboard feel like a deliberate, credible product without changing its behavior.”
 
-No config file. No API key. No account.
+### Start here on Monday
 
-<br>
+If you already have a working frontend that looks unfinished, start with **[Premium UI Revamp](premium-ui-revamp-skill/)**. It audits structure before decoration, works within the existing stack, implements the changes, and verifies the rendered result.
 
-## The catalog
+## The five skills
 
+| Skill | Best for | What it delivers | Requirements |
+|:--|:--|:--|:--|
+| **[🛒 Crazy Ecommerce Builder](crazy-ecommerce-builder-skill/)** | A memorable, brand-specific storefront | Creative thesis, original image system, working commerce UI, and build verification | A web project; image generation strongly recommended |
+| **[🛬 Landing Page Generator](landing-page-generator-skill/)** | Campaign, launch, signup, and lead-capture pages | One production-ready HTML file plus conversion, CTA, and speed audits | Python 3 for bundled audits |
+| **[✨ Premium UI Revamp](premium-ui-revamp-skill/)** | A generic, dated, inconsistent, or visibly AI-generated interface | Implemented redesign, design rationale, responsive and accessibility polish | An existing frontend and its normal build tools |
+| **[🗣️ Talking Avatar](talking-avatar-skill/)** | Realtime voice chat with a lip-synced character | Next.js/vinext starter, existing-app integration, portrait pipeline, audio-driven mouth poses, and tests | Node.js, Python 3, an OpenAI API key, and image generation |
+| **[🎮 Three.js Game Generator](threejs-game-generator-skill/)** | Original 3D browser games and interactive prototypes | A playable Three.js project with game loop, controls, UI states, audio, persistence, and build verification | Node.js, npm, and a WebGL-capable browser |
 
-### 🚀 App Builders <sub><sup>6 skills · <code>app-builder-skills/</code></sup></sub>
+### Proof, not prompt snippets
 
-*Point an agent at an idea and get a working, art-directed product back — not a scaffold.*
+The useful detail lives inside each package:
 
-| Skill | What it does |
+| Package | Included working material |
 |:--|:--|
-| **[🛬 Landing Page Generator](app-builder-skills/landing-page-generator-skill)** | High-converting landing pages as production HTML — with the conversion audit built in. |
-| **[🛒 Crazy Ecommerce Builder](app-builder-skills/crazy-ecommerce-builder-skill)** | Anti-template storefronts with generated product photography and a real creative thesis. |
-| **[🕹️ HTML Game Generator](app-builder-skills/html-game-generator-skill)** | One self-contained .html file. Menus, art, sound, particles, save support. Double-click and play. |
-| **[📸 React Screenshot Recreator](app-builder-skills/react-screenshot-recreator-skill)** | Paste a screenshot. Get React + TypeScript + Tailwind that a designer can't tell apart. |
-| **[✨ Premium UI Revamp](app-builder-skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. |
-| **[🗣️ Talking Avatar](app-builder-skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. |
+| Crazy Ecommerce Builder | Three art-direction and commerce references |
+| Landing Page Generator | A nine-section HTML starter, four focused references, and three executable audit scripts |
+| Premium UI Revamp | A premium-pattern library and a scored quality rubric |
+| Talking Avatar | Six app/test templates, three implementation references, and two Python utilities |
+| Three.js Game Generator | Engine, visual, audio, and genre playbooks built specifically for 3D browser games |
 
-### 🎨 Design Systems <sub><sup>8 skills · <code>ui-skills/</code></sup></sub>
+Open any `SKILL.md` and you will see an output contract, decision criteria, verification steps, and explicit boundaries. Supporting files are loaded only when the task needs them.
 
-*Opinionated art direction. Each one is a full aesthetic your agent can actually hold on to.*
+## Install it your way
 
-| Skill | What it does |
-|:--|:--|
-| **[🏛️ Boutique Frontend Designer](ui-skills/boutique-frontend-designer-skill)** | The anti-slop default. Agency-grade interfaces instead of unmodified shadcn. |
-| **[🧩 Tailwind Component Factory](ui-skills/tailwind-component-factory-skill)** | Accessible, headless-friendly Tailwind primitives with the ARIA already correct. |
-| **[📣 Bold SaaS Marketing UI](ui-skills/bold-saas-marketing-ui-skill)** | Landing pages that convert without looking like every other Y Combinator homepage. |
-| **[📰 Editorial Web Layout](ui-skills/editorial-web-layout-skill)** | Magazine typography, asymmetric columns, print rhythm. Content-first and confident. |
-| **[🪟 Glass UI System](ui-skills/glass-ui-system-skill)** | Glassmorphism with actual depth hierarchy — not a blur filter on everything. |
-| **[🕴️ Minimal Luxury UI](ui-skills/minimal-luxury-ui-skill)** | Restraint as a design decision. Premium type, sparse composition, precise spacing. |
-| **[🧱 Neo-Brutalism Web](ui-skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. |
-| **[📺 Retro Futurist Web](ui-skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. |
+### Any agent supported by the `skills` CLI
 
-### 📈 Startup & Growth <sub><sup>3 skills · <code>startup-skills/</code></sup></sub>
+```bash
+# Interactive picker
+npx skills add buildfastwithai/buildfast-skills
 
-*Evidence-backed GTM work: who buys, whether you're ready, and how the money adds up.*
+# One named skill
+npx skills add buildfastwithai/buildfast-skills --skill threejs-game-generator-skill
 
-| Skill | What it does |
-|:--|:--|
-| **[🔍 LaunchAudit](startup-skills/launch-audit-skill)** | Give it a URL. Get a verdict: ready to launch, fix these first, or not yet. |
-| **[🎯 Customer Finder](startup-skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. |
-| **[📊 Startup Blueprint](startup-skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. |
+# Every skill, globally
+npx skills add buildfastwithai/buildfast-skills --all --global
+```
 
-### 🧱 Backend & Data <sub><sup>4 skills · <code>backend-skills/</code></sup></sub>
+### Claude Code, manual install
 
-*Auth, schemas, route handlers and MCP servers that survive contact with production.*
+Keep the whole selected folder so its references, scripts, and assets remain available:
 
-| Skill | What it does |
-|:--|:--|
-| **[🔌 MCP Server Builder](backend-skills/mcp-server-builder-skill)** | Design and ship Model Context Protocol servers that don't leak your database. |
-| **[🔐 MERN Auth Best Practices](backend-skills/mern-auth-best-practices-skill)** | JWT and Auth.js flows with refresh rotation and cookie strategy that actually holds. |
-| **[🗄️ Mongoose Schema Architect](backend-skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. |
-| **[⚡ Next.js Route Handler](backend-skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. |
+```bash
+git clone --depth 1 https://github.com/buildfastwithai/buildfast-skills.git
+mkdir -p ~/.claude/skills
+cp -R buildfast-skills/premium-ui-revamp-skill ~/.claude/skills/
+```
 
-### 📝 Docs & Research <sub><sup>3 skills · <code>docs-skills/</code></sup></sub>
+### Claude.ai
 
-*Turn scattered sources and half-finished repos into something a stranger can read.*
+Download or clone the repository, compress the skill folder you want, then upload that folder under **Settings → Capabilities → Skills**.
 
-| Skill | What it does |
-|:--|:--|
-| **[📖 README Architect](docs-skills/readme-architect-skill)** | Production-quality READMEs with badges, setup, usage and contribution guidance. |
-| **[🔬 Research Synthesizer](docs-skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. |
-| **[🎞️ Deck Outline Generator](docs-skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. |
+### Other assistants
 
-### 🛠️ Agent Workflow <sub><sup>8 skills · <code>workflow-skills/</code></sup></sub>
+Copy the selected `*-skill` folder into your assistant's skills directory. If the assistant has no skill system, attach `SKILL.md` and the references it links to, then use this fallback prompt:
 
-*Meta-skills that make every other agent run tighter — critique, handoff, commits, test strength.*
+> Read the attached SKILL.md as operating instructions. Preserve my stated scope and permissions, load only the linked references needed for this request, implement the requested outcome, and run the skill's verification steps before handing it back.
 
-| Skill | What it does |
-|:--|:--|
-| **[🚢 Ship It](workflow-skills/ship-it-skill)** | Turns any repo into a public-facing open-source project ready for a launch tweet. |
-| **[🤝 Claude → Codex Handoff](workflow-skills/claude-to-codex-handoff-skill)** | Package a whole conversation into a zip another agent can pick up cold. |
-| **[🧪 Test Strength](workflow-skills/test-strength-skill)** | Coverage lies. Mutation testing tells you whether your tests would notice a bug. |
-| **[🕵️ Agent Output Critic](workflow-skills/agent-output-critic-skill)** | A second agent whose only job is to find what the first one got wrong. |
-| **[📌 Git Conventional Commits](workflow-skills/git-conventional-commits-skill)** | Commits that explain why, and PR descriptions with a real test plan. |
-| **[🧠 Prompt Optimizer (CoT)](workflow-skills/prompt-optimizer-cot-skill)** | Rewrites vague tasks into prompts that reason properly. |
-| **[✅ Tool Use Validator](workflow-skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. |
-| **[🐧 Linux Kernel Troubleshooter](workflow-skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. |
+## How a BuildFast skill works
 
-<br>
+1. **Discovery** — the frontmatter description tells the agent exactly when the skill applies.
+2. **Decision-making** — `SKILL.md` supplies the workflow, constraints, and quality bar that change how the agent works.
+3. **Progressive detail** — references are opened only for the relevant mode, keeping routine tasks lean.
+4. **Execution** — templates and scripts make repeatable work deterministic where that matters.
+5. **Verification** — every builder skill ends by running the real build, audits, or behavioral checks it claims.
 
-## Use it in any agent
+This repository does not add a redundant “registry skill.” The transferable methods are the five installable products themselves.
 
-These are plain [Agent Skills](https://code.claude.com/docs/en/skills) folders — a `SKILL.md` plus whatever it needs. Anything that reads that format can use them: Claude Code, Claude Desktop, Codex, Cursor, opencode.
-
-The `skills` CLI detects what you have installed and puts the folder in the right place. If you'd rather not use it, copy the folder by hand — `git clone` this repo and drop `<category>-skills/<name>-skill` into your agent's skills directory. That's the whole install.
-
-Using **Cowork**? Skills are account-level rather than on disk — install locally first, then upload the skill folder in the Cowork UI.
-
-<br>
-
-## What's actually in a skill
-
-A skill is a folder your agent reads *on demand*. It stays out of the context window until the description matches what you asked for, then the agent pulls in exactly the parts it needs.
+## Repository structure
 
 ```text
-launch-audit-skill/
-├── SKILL.md              ← the entry point: when to trigger, how to work
-├── README.md             ← human-facing docs
-├── references/           ← deep context the agent reads before acting
-│   ├── evaluation-framework.md
-│   └── report-schema.md
-├── scripts/              ← real code the agent executes
-│   └── generate_report.mjs
-├── templates/            ← output scaffolding
-├── agents/               ← an openai.yaml for Codex
-└── examples/             ← a finished report you can open right now
+buildfast-skills/
+├── crazy-ecommerce-builder-skill/
+├── landing-page-generator-skill/
+├── premium-ui-revamp-skill/
+├── talking-avatar-skill/
+├── threejs-game-generator-skill/
+├── scripts/
+│   └── validate_repo.py
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
 ```
 
-`SKILL.md` opens with frontmatter that decides when the skill fires:
-
-```yaml
----
-name: launch-audit-skill
-description: Audit a startup, SaaS, app, developer tool, landing page, or
-  product before launch from a live URL, localhost page, repository,
-  screenshots, or supplied copy. Use when the user needs to test whether a
-  public experience is launch-ready, produce a Ready to launch / Launch after
-  critical fixes / Not ready yet verdict, or create a standalone HTML report.
----
-```
-
-That `description` is the trigger. It's the only part always in context, which is why every skill here spends real effort on it.
-
-The format is Anthropic's [Agent Skills](https://code.claude.com/docs/en/skills) spec — the same one Claude Code, Codex, Cursor and opencode all read. Write once, run everywhere.
-
-<br>
-
-## Repo structure
+Each skill folder is self-describing:
 
 ```text
-agent-skills/
-├── README.md                 this file — the catalog
-├── app-builder-skills/   6   finished, runnable products
-├── ui-skills/            8   design systems and art direction
-├── startup-skills/       3   GTM, launch readiness, financials
-├── backend-skills/       4   APIs, schemas, auth
-├── docs-skills/          3   READMEs and research synthesis
-└── workflow-skills/      8   agent tooling and process
+skill-name/
+├── SKILL.md            # trigger metadata and operating instructions
+├── README.md           # human-facing overview and examples
+├── agents/             # optional agent UI metadata
+├── references/         # detail loaded only when relevant
+├── scripts/            # repeatable checks or generators
+└── assets/             # starter files copied into the result
 ```
 
-32 skills across six category folders, each sitting at the root of the repo — so a skill's path is just `<category>-skills/<name>-skill`.
+## Validate locally
 
-That's the whole repo. No build step, no manifest, no installer to maintain — each skill folder is self-describing, and the `skills` CLI reads them directly off GitHub.
+The repository has no CI workflow and no deploy configuration. Run the same local checks contributors use:
 
-<br>
+```bash
+python scripts/validate_repo.py
+```
+
+For packages with executable helpers, also run their focused checks:
+
+```bash
+python -m py_compile landing-page-generator-skill/scripts/*.py
+python -m py_compile talking-avatar-skill/scripts/*.py
+```
+
+The validator checks skill names, frontmatter, install commands, agent metadata, relative Markdown links, and stale paths from the old repository identity.
 
 ## Contributing
 
-New skills are welcome — especially ones that *do* something rather than describe something.
+Improvements are welcome—especially clearer trigger descriptions, stronger verification, practical references, and scripts that replace repeated guesswork.
 
-The bar: a real `SKILL.md` whose `description` earns its trigger, and at least one worked example.
-
-```bash
-git clone https://github.com/buildfastwithai/agent-skills
-cd agent-skills
-mkdir -p <category>-skills/my-thing-skill   # note the -skill suffix
-# write SKILL.md, add a row to the catalog table, open a PR
-```
-
-<br>
+Read [CONTRIBUTING.md](CONTRIBUTING.md), keep each pull request focused on one skill or repository concern, and include the local validation output.
 
 ## FAQ
 
 <details>
-<summary><b>Do I need to install npm packages or an API key?</b></summary>
-<br>
-No. <code>npx skills</code> just copies folders into your agent's skills directory. Nothing phones home, nothing needs a key, nothing runs in the background.
+<summary><strong>Do all five skills work in every coding agent?</strong></summary>
+
+The folders use the portable Agent Skills shape: a `SKILL.md` plus optional resources. Installation support and tool availability vary by agent. A skill will fall back to the closest local workflow when a preferred integration is unavailable, but requirements such as Node.js, Python, image generation, or an API key still apply where listed.
+
 </details>
 
 <details>
-<summary><b>Will these work outside Claude Code?</b></summary>
-<br>
-Yes. They follow the open Agent Skills <code>SKILL.md</code> format, which Codex, Cursor and opencode also read. A few skills bundle an <code>agents/openai.yaml</code> for Codex specifically. For anything else, copy the folder in by hand.
+<summary><strong>Can I install more than one?</strong></summary>
+
+Yes. Run the interactive quickstart, pass several names after `--skill`, or use `--all`.
+
 </details>
 
 <details>
-<summary><b>How does the agent know when to use a skill?</b></summary>
-<br>
-Off the <code>description</code> in the frontmatter — that one line is the only part loaded into context up front. You can also name a skill directly: <i>"use landing-page-generator-skill for this."</i>
+<summary><strong>How do updates work?</strong></summary>
+
+Run the same `npx skills add` command again, or use `npx skills update` for installed skills.
+
 </details>
 
 <details>
-<summary><b>How do I update?</b></summary>
-<br>
-Run the same <code>add</code> command again — it overwrites in place, so re-running is how you upgrade.
-</details>
+<summary><strong>Why only five skills?</strong></summary>
 
-<details>
-<summary><b>Can I install more than one at a time?</b></summary>
-<br>
-Yes — <code>npx skills add buildfastwithai/agent-skills</code> pulls the whole registry and lets you pick from a list.
-</details>
+The catalog is intentionally focused on build workflows with enough supporting material to produce and verify a concrete result. Depth beats a long list of interchangeable prompt files.
 
-<details>
-<summary><b>Where do the outputs go?</b></summary>
-<br>
-Into your working directory, usually an <code>outputs/</code> folder, with clickable local links. Skills that generate reports also emit the structured JSON behind them so you can re-render or edit.
 </details>
-
-<br>
 
 ## License
 
-MIT. Use them, fork them, ship things with them.
-
-<details>
-<summary>Full MIT license text</summary>
-<br>
-
-```text
-MIT License
-
-Copyright (c) 2026 Build Fast with AI
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-</details>
-
-<br>
+[MIT](LICENSE) © 2026 Build Fast with AI.
 
 ---
 
-<h3 align="center">If one of these saved you an afternoon, a star helps other people find them.</h3>
-
 <p align="center">
-  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/company/build-fast-with-ai">
-    <img src="https://img.shields.io/badge/-Follow%20on%20LinkedIn-0077B5?logo=linkedin&style=flat-square" alt="LinkedIn">
-  </a>
-  <a href="https://twitter.com/BuildFastWithAI">
-    <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
-  </a>
-</p>
-
-<p align="center">
-  <sub>
-    Built by <a href="https://www.buildfastwithai.com/"><b>Build Fast with AI</b></a>
-    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/gen-ai-experiments">Gen-AI-Experiments</a>
-    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/agent-skills/issues/new">Request a skill</a>
-  </sub>
+  Built by <a href="https://www.buildfastwithai.com/"><strong>Build Fast with AI</strong>
+  · <a href="https://github.com/buildfastwithai/buildfast-skills/issues/new">Request a skill</a>
+  · <a href="https://github.com/buildfastwithai/buildfast-skills/stargazers">Star BuildFast Skills</a>
 </p>
