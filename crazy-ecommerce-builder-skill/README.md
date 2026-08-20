@@ -4,7 +4,7 @@
 
 **Turns a short product brief into an unconventional storefront with a coherent creative thesis—not random effects.**
 
-[Install](#install) · [What it does](#what-it-does) · [Try it](#try-it) · [Browse BuildFast Skills](../README.md)
+[Install](#install) · [The method](#the-method) · [Try it](#try-it) · [Browse BuildFast Skills](../README.md)
 
 </div>
 
@@ -16,15 +16,25 @@ npx skills add buildfastwithai/buildfast-skills --skill crazy-ecommerce-builder-
 
 Add `--global` to make it available across projects.
 
-## What it does
+## At a glance
+
+| Signal | Detail |
+|:--|:--|
+| **Bring** | A product or company brief, catalog details, brand constraints, and any existing web project |
+| **Get** | A creative thesis, coherent image world, responsive storefront, cart interactions, and build results |
+| **Verifies** | Product clarity, cart usability, mobile composition, accessible controls, asset consistency, and production build |
+| **Best with** | Image generation plus the project's existing framework and commerce integrations |
+
+## The method
 
 The skill connects art direction to the truth of the product, creates a consistent image world, then builds the shortest credible path from intrigue to purchase.
 
-- Distills the brief into a product tension, customer feeling, visual world, commerce spine, and signature device.
-- Plans a small family of consistent product images instead of unrelated generated art.
-- Builds a distinctive hero, browseable product surface, cart state, brand proof, and honest demo states for services that are not connected.
-- Preserves the current framework, functional behavior, and hosting configuration.
-- Runs the production build and checks the storefront at mobile and desktop sizes.
+| Stage | What happens |
+|:--|:--|
+| **1 · Find the product tension** | Distill the brief into a customer feeling, visual world, commerce spine, and signature device |
+| **2 · Build one image system** | Plan a small family of consistent product images instead of unrelated generated art |
+| **3 · Make it shoppable** | Build the hero, browse surface, cart state, brand proof, and honest demo states |
+| **4 · Prove it works** | Run the production build and check the storefront at mobile and desktop sizes |
 
 ## Requirements
 
@@ -34,7 +44,8 @@ The skill connects art direction to the truth of the product, creates a consiste
 
 ## Try it
 
-> “Use crazy-ecommerce-builder-skill to turn this ceramic coffee brand into a bold storefront. Keep the checkout as a clearly labeled demo.”
+> [!TIP]
+> **Start here:** “Use crazy-ecommerce-builder-skill to turn this ceramic coffee brand into a bold storefront. Keep the checkout as a clearly labeled demo.”
 
 > “Rework my existing shop so it feels experimental and memorable without making it harder to buy.”
 
@@ -68,4 +79,4 @@ The design should lose meaning if swapped onto an unrelated company. The product
 
 ---
 
-[← Browse all BuildFast Skills](../README.md) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse all BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

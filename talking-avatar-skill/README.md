@@ -16,6 +16,15 @@ npx skills add buildfastwithai/buildfast-skills --skill talking-avatar-skill
 
 Add `--global` to make it available across projects.
 
+## At a glance
+
+| Signal | Detail |
+|:--|:--|
+| **Bring** | A portrait or character description, an initialized compatible app, and an OpenAI API key at runtime |
+| **Get** | Character assets, realtime voice UI, audio-driven mouth poses, connection states, and regression tests |
+| **Protects** | The pasted key remains ephemeral and session negotiation stays behind a same-origin server route |
+| **Verifies** | Asset dimensions, unresolved template tokens, lip-sync source behavior, and worker responses when a build exists |
+
 ## What it builds
 
 - A Next.js/vinext talking-avatar interface from a supplied photo or a written character description, or integration into an existing Vite app that already has a safe backend.
@@ -37,7 +46,8 @@ The skill can scaffold a new app or integrate the avatar layer into an existing 
 
 ## Try it
 
-> “Use talking-avatar-skill to build a voice companion from this portrait.”
+> [!TIP]
+> **Start here:** “Use talking-avatar-skill to build a voice companion from this portrait.”
 
 > “Create a warm museum-guide character from a description and add it to my existing Next.js Realtime app.”
 
@@ -49,6 +59,15 @@ The skill can scaffold a new app or integrate the avatar layer into an existing 
 python scripts/scaffold_app.py --help
 python scripts/validate_avatar_assets.py --help
 ```
+
+### Local scaffold proof
+
+| Check | Result |
+|:--|:--|
+| Initialized-project guard | Correctly rejects an empty folder without `package.json` |
+| Dry run and scaffold | Exit code **0** against an initialized local project |
+| Template replacement | **0** unresolved template tokens |
+| Pre-build regression test | **2 passed**, **2 worker-build checks skipped** until a vinext build exists |
 
 ## Inside the skill
 
@@ -74,4 +93,4 @@ You receive a runnable app, the portrait and mouth assets it uses, tests, the co
 
 ---
 
-[← Browse all BuildFast Skills](../README.md) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse all BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

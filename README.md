@@ -2,13 +2,13 @@
 
 # ⚡ BuildFast Skills
 
-**Five production-grade Agent Skills that turn plain-language briefs into finished web experiences.**
+**BuildFast Skills is a focused collection of five production-grade Agent Skills that turn plain-language briefs into finished web experiences.**
 
-Brief in. Working landing page, storefront, interface revamp, talking avatar, or Three.js game out.
+One command. No framework migration. No hosted lock-in.
 
-[Quickstart](#quickstart) · [Browse the skills](#the-five-skills) · [How it works](#how-a-buildfast-skill-works) · [Contribute](#contributing)
+[Quickstart](#quickstart) · [Browse the skills](#pick-your-outcome) · [How it works](#how-a-buildfast-skill-works) · [Contribute](#contributing)
 
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-5-111111?style=flat-square)](#the-five-skills)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-5-111111?style=flat-square)](#pick-your-outcome)
 [![Install with npx](https://img.shields.io/badge/install-npx%20skills-CB3837?style=flat-square&logo=npm)](#quickstart)
 [![MIT License](https://img.shields.io/badge/license-MIT-0f766e?style=flat-square)](LICENSE)
 
@@ -19,6 +19,17 @@ Brief in. Working landing page, storefront, interface revamp, talking avatar, or
 Most skill repositories are collections of prompts. BuildFast Skills is deliberately smaller and more complete: each package carries the workflow, constraints, references, scripts, or starter files needed to finish a specific job.
 
 There is no framework to adopt and no hosted service to depend on. Install one skill, describe the outcome you want, and let your coding agent work inside the project you already have.
+
+## One brief, one verified result
+
+<p align="center">
+  <strong>Pick an outcome</strong>
+  &nbsp;→&nbsp; Share the brief
+  &nbsp;→&nbsp; Let the skill build
+  &nbsp;→&nbsp; Verify the real result
+</p>
+
+The agent loads the focused method and bundled resources for that job, then runs the relevant build, audits, tests, or browser checks before handoff.
 
 ## Quickstart
 
@@ -34,15 +45,16 @@ Install one skill directly:
 npx skills add buildfastwithai/buildfast-skills --skill premium-ui-revamp-skill
 ```
 
-Add `--global` if you want the skill available across projects. Then restart your agent and ask for the outcome in normal language:
+Add `--global` if you want the skill available across projects. Then restart your agent and ask for the outcome in normal language.
 
-> “Use premium-ui-revamp-skill to make this dashboard feel like a deliberate, credible product without changing its behavior.”
+> [!TIP]
+> **A useful first prompt:** “Use premium-ui-revamp-skill to make this dashboard feel like a deliberate, credible product without changing its behavior.”
 
 ### Start here on Monday
 
 If you already have a working frontend that looks unfinished, start with **[Premium UI Revamp](premium-ui-revamp-skill/)**. It audits structure before decoration, works within the existing stack, implements the changes, and verifies the rendered result.
 
-## The five skills
+## Pick your outcome
 
 | Skill | Best for | What it delivers | Requirements |
 |:--|:--|:--|:--|
@@ -139,11 +151,18 @@ skill-name/
 
 ## Validate locally
 
+The repository deliberately has no CI or deploy configuration. Confirm that the skills CLI discovers the full catalog:
+
+```bash
+npx skills add . --list
+# Found 5 skills
+```
+
 For packages with executable helpers, run their focused checks:
 
 ```bash
-python -m py_compile landing-page-generator-skill/scripts/*.py
-python -m py_compile talking-avatar-skill/scripts/*.py
+python -m compileall -q landing-page-generator-skill/scripts
+python -m compileall -q talking-avatar-skill/scripts
 ```
 
 ## Contributing

@@ -16,6 +16,15 @@ npx skills add buildfastwithai/buildfast-skills --skill premium-ui-revamp-skill
 
 Add `--global` to make it available across projects.
 
+## At a glance
+
+| Signal | Detail |
+|:--|:--|
+| **Bring** | An existing frontend, the target route or screen, and any product or brand constraints |
+| **Get** | Implemented redesign, compact design brief, rationale, responsive states, and verification results |
+| **Preserves** | Framework, routes, content, data flow, controls, and working behavior |
+| **Verifies** | Production build, keyboard/focus behavior, responsiveness, reduced motion, and the included quality rubric |
+
 ## What it changes
 
 The skill audits the actual rendered surface, writes a compact design brief, and fixes problems in the order that matters:
@@ -28,7 +37,8 @@ It works inside HTML/CSS/JavaScript, React, Vue, Svelte, Next.js, and similar fr
 
 ## Try it
 
-> “Use premium-ui-revamp-skill to make this dashboard feel precise and trustworthy. Preserve every workflow.”
+> [!TIP]
+> **Start here:** “Use premium-ui-revamp-skill to make this dashboard feel precise and trustworthy. Preserve every workflow.”
 
 > “Audit this marketing page at desktop and mobile sizes, then implement the highest-impact fixes.”
 
@@ -36,11 +46,13 @@ It works inside HTML/CSS/JavaScript, React, Vue, Svelte, Next.js, and similar fr
 
 ## What it verifies
 
-- Existing routes, data flow, controls, and content still work.
-- Keyboard, focus-visible, reduced-motion, and responsive states remain usable.
-- Shared tokens and repeated components stay coherent.
-- The production build succeeds.
-- The final rendered surface is compared against the included quality rubric.
+| Surface | Done means |
+|:--|:--|
+| **Behavior** | Existing routes, data flow, controls, and content still work |
+| **Access** | Keyboard, focus-visible, reduced-motion, and responsive states remain usable |
+| **System** | Shared tokens and repeated components stay coherent |
+| **Build** | The production build succeeds |
+| **Finish** | The rendered result passes the included quality rubric |
 
 ## Inside the skill
 
@@ -60,4 +72,4 @@ You receive implemented changes in the existing stack, the design rationale behi
 
 ---
 
-[← Browse all BuildFast Skills](../README.md) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse all BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

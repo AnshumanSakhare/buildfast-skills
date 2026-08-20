@@ -16,6 +16,15 @@ npx skills add buildfastwithai/buildfast-skills --skill threejs-game-generator-s
 
 Add `--global` to make it available across projects.
 
+## At a glance
+
+| Signal | Detail |
+|:--|:--|
+| **Bring** | A game brief, an unfinished Three.js scene, or an existing browser-game project |
+| **Get** | A small complete game with controls, camera, objective, feedback, UI states, audio, persistence, and build results |
+| **Defaults to** | The existing stack—or a lean Three.js + Vite project when no project exists |
+| **Verifies** | One full playthrough, restart flow, console/assets, resize, focus loss, controls, persistence, and busy-scene performance |
+
 ## What it builds
 
 - A maintainable Three.js project in the user's existing stack, or a lean Vite project for a new game.
@@ -33,11 +42,18 @@ Add `--global` to make it available across projects.
 
 ## Try it
 
-> “Use threejs-game-generator-skill to build a low-poly delivery game where the city folds upward as the timer runs out.”
+> [!TIP]
+> **Start here:** “Use threejs-game-generator-skill to build a low-poly delivery game where the city folds upward as the timer runs out.”
 
 > “Turn this Three.js scene into a complete three-minute arcade loop with mobile controls and a restart flow.”
 
 > “Prototype an original third-person stealth game inspired by diorama theater sets—do not copy an existing title's characters or levels.”
+
+## The build loop
+
+| 1 · Contract | 2 · Vertical slice | 3 · Feel and art | 4 · Full-run proof |
+|:--|:--|:--|:--|
+| Define fantasy, core loop, completion, camera, controls, and scope | Prove one player verb, objective, obstacle, feedback loop, and restart | Tune movement/camera together, then apply one coherent visual and audio world | Build, play to completion, test state transitions, and report limitations |
 
 ## Inside the skill
 
@@ -61,4 +77,4 @@ You receive the runnable project, control map, asset and licensing notes, build/
 
 ---
 
-[← Browse all BuildFast Skills](../README.md) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse all BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
