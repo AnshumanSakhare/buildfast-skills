@@ -1,39 +1,61 @@
 <div align="center">
 
-# ⚡ BuildFast Skills
+# BuildFast Skills
 
-**BuildFast Skills is a focused collection of five production-grade Agent Skills that turn plain-language briefs into finished web experiences.**
+**Five production-grade Agent Skills for turning plain-language briefs into finished web experiences.**
 
-One command. No framework migration. No hosted lock-in.
+One focused workflow. The real project. A verified handoff.
 
-[Quickstart](#quickstart) · [Browse the skills](#pick-your-outcome) · [How it works](#how-a-buildfast-skill-works) · [Contribute](#contributing)
+[Browse the collection](#choose-your-build) · [Install](#install) · [How it works](#the-buildfast-recipe) · [Contribute](CONTRIBUTING.md)
 
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-5-111111?style=flat-square)](#pick-your-outcome)
-[![Install with npx](https://img.shields.io/badge/install-npx%20skills-CB3837?style=flat-square&logo=npm)](#quickstart)
-[![MIT License](https://img.shields.io/badge/license-MIT-0f766e?style=flat-square)](LICENSE)
+<br>
+
+<code>npx skills add buildfastwithai/buildfast-skills</code>
 
 </div>
 
+![A visual map of the five BuildFast skill outcomes](assets/readme/collection-hero.webp)
+
+<p align="center"><sub>Commerce, landing pages, premium interfaces, realtime avatars, and browser games—one deliberate skill for each job.</sub></p>
+
 ---
 
-Most skill repositories are collections of prompts. BuildFast Skills is deliberately smaller and more complete: each package carries the workflow, constraints, references, scripts, or starter files needed to finish a specific job.
+## Why this exists
 
-There is no framework to adopt and no hosted service to depend on. Install one skill, describe the outcome you want, and let your coding agent work inside the project you already have.
+Most skill repositories are long lists of prompt snippets. BuildFast Skills is deliberately smaller and deeper: every package defines a concrete output, supplies the references or starter material needed to build it, and ends with real verification.
 
-## One brief, one verified result
+There is no framework to adopt and no hosted service to depend on. Pick the outcome, describe the brief, and let the skill work inside the project you already have.
 
-<p align="center">
-  <strong>Pick an outcome</strong>
-  &nbsp;→&nbsp; Share the brief
-  &nbsp;→&nbsp; Let the skill build
-  &nbsp;→&nbsp; Verify the real result
-</p>
+## What you get
 
-The agent loads the focused method and bundled resources for that job, then runs the relevant build, audits, tests, or browser checks before handoff.
+- **A complete method, not a magic sentence.** Each `SKILL.md` carries the workflow, decisions, boundaries, and finish line for one job.
+- **Useful material in the box.** References, templates, test scaffolds, and executable audits live beside the instructions that use them.
+- **Respect for the existing stack.** Skills preserve working behavior and avoid unrelated migrations.
+- **Proof before handoff.** Builds, browser checks, audits, or playthroughs close the loop.
+- **Honest limits.** Missing credentials, providers, assets, and production integrations are named—not simulated.
 
-## Quickstart
+## Choose your build
 
-Browse all five skills and choose interactively:
+| Skill | Start here when you need… | Finished means… |
+|:--|:--|:--|
+| **[Crazy Ecommerce Builder](crazy-ecommerce-builder-skill/)** | A storefront with a memorable, product-specific creative thesis | Original visual system, responsive commerce UI, usable cart, and a passing production build |
+| **[Landing Page Generator](landing-page-generator-skill/)** | A focused campaign, launch, signup, or lead-capture page | One production-ready HTML file with conversion, CTA, and likely-speed audits |
+| **[Premium UI Revamp](premium-ui-revamp-skill/)** | A working interface that feels generic, dated, or visibly AI-generated | Implemented redesign that preserves behavior and survives build, access, and responsive checks |
+| **[Talking Avatar](talking-avatar-skill/)** | Realtime voice chat with an audio-driven character | Runnable app, safe session negotiation, mouth poses tied to remote audio, and regression tests |
+| **[Three.js Game Generator](threejs-game-generator-skill/)** | An original 3D browser game or an unfinished Three.js scene | A small complete game loop with controls, states, audio, persistence, and playthrough proof |
+
+## See the range
+
+| A real storefront built by the commerce skill | A premium-interface transformation direction | A real voice-avatar app built by the avatar skill |
+|:--:|:--:|:--:|
+| <img src="crazy-ecommerce-builder-skill/assets/readme/strata-products.webp" alt="STRATA product collection" width="100%"> | <img src="premium-ui-revamp-skill/assets/readme/revamp-direction.webp" alt="Premium UI transformation visual" width="100%"> | <img src="talking-avatar-skill/assets/readme/aiko-desktop.webp" alt="Aiko realtime voice avatar app" width="100%"> |
+| **Commerce proof** | **Revamp direction** | **Realtime proof** |
+
+The storefront and avatar images are captured from real Build Fast with AI example apps. The interface transformation is an editorial direction visual, clearly separated from product proof.
+
+## Install
+
+Choose interactively:
 
 ```bash
 npx skills add buildfastwithai/buildfast-skills
@@ -45,85 +67,24 @@ Install one skill directly:
 npx skills add buildfastwithai/buildfast-skills --skill premium-ui-revamp-skill
 ```
 
-Add `--global` if you want the skill available across projects. Then restart your agent and ask for the outcome in normal language.
+Add `--global` to make it available across projects, then restart your agent and ask for the outcome in normal language.
 
 > [!TIP]
-> **A useful first prompt:** “Use premium-ui-revamp-skill to make this dashboard feel like a deliberate, credible product without changing its behavior.”
-
-### Start here on Monday
-
-If you already have a working frontend that looks unfinished, start with **[Premium UI Revamp](premium-ui-revamp-skill/)**. It audits structure before decoration, works within the existing stack, implements the changes, and verifies the rendered result.
-
-## Pick your outcome
-
-| Skill | Best for | What it delivers | Requirements |
-|:--|:--|:--|:--|
-| **[🛒 Crazy Ecommerce Builder](crazy-ecommerce-builder-skill/)** | A memorable, brand-specific storefront | Creative thesis, original image system, working commerce UI, and build verification | A web project; image generation strongly recommended |
-| **[🛬 Landing Page Generator](landing-page-generator-skill/)** | Campaign, launch, signup, and lead-capture pages | One production-ready HTML file plus conversion, CTA, and speed audits | Python 3 for bundled audits |
-| **[✨ Premium UI Revamp](premium-ui-revamp-skill/)** | A generic, dated, inconsistent, or visibly AI-generated interface | Implemented redesign, design rationale, responsive and accessibility polish | An existing frontend and its normal build tools |
-| **[🗣️ Talking Avatar](talking-avatar-skill/)** | Realtime voice chat with a lip-synced character | Next.js/vinext starter, existing-app integration, portrait pipeline, audio-driven mouth poses, and tests | Node.js, Python 3, an OpenAI API key, and image generation |
-| **[🎮 Three.js Game Generator](threejs-game-generator-skill/)** | Original 3D browser games and interactive prototypes | A playable Three.js project with game loop, controls, UI states, audio, persistence, and build verification | Node.js, npm, and a WebGL-capable browser |
-
-### Proof, not prompt snippets
-
-The useful detail lives inside each package:
-
-| Package | Included working material |
-|:--|:--|
-| Crazy Ecommerce Builder | Three art-direction and commerce references |
-| Landing Page Generator | A nine-section HTML starter, four focused references, and three executable audit scripts |
-| Premium UI Revamp | A premium-pattern library and a scored quality rubric |
-| Talking Avatar | Six app/test templates, three implementation references, and two Python utilities |
-| Three.js Game Generator | Engine, visual, audio, and genre playbooks built specifically for 3D browser games |
-
-Open any `SKILL.md` and you will see an output contract, decision criteria, verification steps, and explicit boundaries. Supporting files are loaded only when the task needs them.
-
-## Install it your way
-
-### Any agent supported by the `skills` CLI
-
-```bash
-# Interactive picker
-npx skills add buildfastwithai/buildfast-skills
-
-# One named skill
-npx skills add buildfastwithai/buildfast-skills --skill threejs-game-generator-skill
-
-# Every skill, globally
-npx skills add buildfastwithai/buildfast-skills --all --global
-```
-
-### Claude Code, manual install
-
-Keep the whole selected folder so its references, scripts, and assets remain available:
-
-```bash
-git clone --depth 1 https://github.com/buildfastwithai/buildfast-skills.git
-mkdir -p ~/.claude/skills
-cp -R buildfast-skills/premium-ui-revamp-skill ~/.claude/skills/
-```
-
-### Claude.ai
-
-Download or clone the repository, compress the skill folder you want, then upload that folder under **Settings → Capabilities → Skills**.
+> **A strong first prompt:** “Use premium-ui-revamp-skill to make this dashboard feel deliberate and trustworthy. Preserve every workflow and verify the result at desktop and mobile sizes.”
 
 ### Other assistants
 
-Copy the selected `*-skill` folder into your assistant's skills directory. If the assistant has no skill system, attach `SKILL.md` and the references it links to, then use this fallback prompt:
+Copy the complete `*-skill` folder into your assistant's skills directory. Keep the folder intact so `references/`, `scripts/`, and `assets/` remain available. If the assistant has no skill system, attach `SKILL.md` and the files it links to.
 
-> Read the attached SKILL.md as operating instructions. Preserve my stated scope and permissions, load only the linked references needed for this request, implement the requested outcome, and run the skill's verification steps before handing it back.
+## The BuildFast recipe
 
-## How a BuildFast skill works
+1. **Name the outcome.** Choose the skill that owns the finish line.
+2. **Share the real brief.** Include audience, constraints, existing stack, proof, assets, and integrations.
+3. **Let the skill decide.** It loads only the references needed for the current mode and works inside the project.
+4. **Verify the product.** The relevant build, audit, browser flow, or playthrough must pass.
+5. **Handoff honestly.** You get the result, commands run, assumptions made, and anything still requiring your input.
 
-1. **Discovery** — the frontmatter description tells the agent exactly when the skill applies.
-2. **Decision-making** — `SKILL.md` supplies the workflow, constraints, and quality bar that change how the agent works.
-3. **Progressive detail** — references are opened only for the relevant mode, keeping routine tasks lean.
-4. **Execution** — templates and scripts make repeatable work deterministic where that matters.
-5. **Verification** — every builder skill ends by running the real build, audits, or behavioral checks it claims.
-
-This repository does not add a redundant “registry skill.” The transferable methods are the five installable products themselves.
-
-## Repository structure
+## What is inside
 
 ```text
 buildfast-skills/
@@ -137,69 +98,39 @@ buildfast-skills/
 └── README.md
 ```
 
-Each skill folder is self-describing:
+Each installable folder is self-contained:
 
 ```text
 skill-name/
-├── SKILL.md            # trigger metadata and operating instructions
-├── README.md           # human-facing overview and examples
+├── SKILL.md            # trigger, workflow, boundaries, verification
+├── README.md           # human-facing tour and usage examples
 ├── agents/             # optional agent UI metadata
 ├── references/         # detail loaded only when relevant
 ├── scripts/            # repeatable checks or generators
-└── assets/             # starter files copied into the result
+└── assets/             # starter and README assets
 ```
+
+## What these skills refuse to fake
+
+- Production checkout, inventory, email, analytics, or hosting without the user's provider and credentials.
+- Testimonials, customer logos, metrics, guarantees, or licensing claims that were never supplied.
+- A “successful” UI revamp that breaks existing workflows.
+- Lip sync driven by a decorative timer instead of the actual remote audio stream.
+- A large game framework presented as if it were a finished playable game.
 
 ## Validate locally
 
-The repository deliberately has no CI or deploy configuration. Confirm that the skills CLI discovers the full catalog:
+This repository intentionally contains no deploy or CI setup. Confirm local discovery and executable helpers with:
 
 ```bash
 npx skills add . --list
-# Found 5 skills
-```
-
-For packages with executable helpers, run their focused checks:
-
-```bash
 python -m compileall -q landing-page-generator-skill/scripts
 python -m compileall -q talking-avatar-skill/scripts
 ```
 
 ## Contributing
 
-Improvements are welcome—especially clearer trigger descriptions, stronger verification, practical references, and scripts that replace repeated guesswork.
-
-Read [CONTRIBUTING.md](CONTRIBUTING.md), keep each pull request focused on one skill or repository concern, and include the local validation output.
-
-## FAQ
-
-<details>
-<summary><strong>Do all five skills work in every coding agent?</strong></summary>
-
-The folders use the portable Agent Skills shape: a `SKILL.md` plus optional resources. Installation support and tool availability vary by agent. A skill will fall back to the closest local workflow when a preferred integration is unavailable, but requirements such as Node.js, Python, image generation, or an API key still apply where listed.
-
-</details>
-
-<details>
-<summary><strong>Can I install more than one?</strong></summary>
-
-Yes. Run the interactive quickstart, pass several names after `--skill`, or use `--all`.
-
-</details>
-
-<details>
-<summary><strong>How do updates work?</strong></summary>
-
-Run the same `npx skills add` command again, or use `npx skills update` for installed skills.
-
-</details>
-
-<details>
-<summary><strong>Why only five skills?</strong></summary>
-
-The catalog is intentionally focused on build workflows with enough supporting material to produce and verify a concrete result. Depth beats a long list of interchangeable prompt files.
-
-</details>
+Improvements are welcome—especially tighter triggers, stronger verification, practical references, and scripts that replace repeated guesswork. Read [CONTRIBUTING.md](CONTRIBUTING.md), keep each change focused, and include the local checks you ran.
 
 ## License
 
@@ -208,7 +139,7 @@ The catalog is intentionally focused on build workflows with enough supporting m
 ---
 
 <p align="center">
-  Built by <a href="https://www.buildfastwithai.com/"><strong>Build Fast with AI</strong>
+  Built by <a href="https://www.buildfastwithai.com/"><strong>Build Fast with AI</strong></a>
   · <a href="https://github.com/buildfastwithai/buildfast-skills/issues/new">Request a skill</a>
-  · <a href="https://github.com/buildfastwithai/buildfast-skills/stargazers">Star BuildFast Skills</a>
+  · <a href="https://github.com/buildfastwithai/buildfast-skills/stargazers">Star the collection</a>
 </p>
