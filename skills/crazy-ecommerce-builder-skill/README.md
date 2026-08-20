@@ -4,7 +4,7 @@
 
 **Turn a short product brief into an unconventional storefront with a coherent creative thesis—not random effects.**
 
-[Why it exists](#why-this-exists) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../README.md)
+[Why it exists](#why-this-exists) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../../README.md)
 
 <br>
 
@@ -81,7 +81,7 @@ Then ask for the outcome:
 ## Inside the skill
 
 ```text
-crazy-ecommerce-builder-skill/
+skills/crazy-ecommerce-builder-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
 └── references/
@@ -94,4 +94,4 @@ The references separate creative direction, image continuity, and commerce usabi
 
 ---
 
-[← Browse BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the standalone example](https://github.com/buildfastwithai/crazy-ecommerce-builder)
+[← Browse BuildFast Skills](../../README.md) · [MIT licensed](../../LICENSE) · [View the standalone example](https://github.com/buildfastwithai/crazy-ecommerce-builder)

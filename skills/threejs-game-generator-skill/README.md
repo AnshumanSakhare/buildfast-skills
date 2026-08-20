@@ -4,7 +4,7 @@
 
 **Turn a game brief into an original, playable 3D browser game with a real loop, controls, UI states, audio, and verification.**
 
-[Why it exists](#why-this-exists) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../README.md)
+[Why it exists](#why-this-exists) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../../README.md)
 
 <br>
 
@@ -80,7 +80,7 @@ Then name the fantasy, player verb, scope, and target controls:
 ## Inside the skill
 
 ```text
-threejs-game-generator-skill/
+skills/threejs-game-generator-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
 └── references/
@@ -94,4 +94,4 @@ The references separate engine architecture, art direction, sound, and genre-spe
 
 ---
 
-[← Browse BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse BuildFast Skills](../../README.md) · [MIT licensed](../../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

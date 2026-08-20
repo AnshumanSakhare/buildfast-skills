@@ -4,7 +4,7 @@
 
 **Build one production-ready HTML landing page, then audit the conversion path, CTA system, and likely performance risks.**
 
-[Why it exists](#why-this-exists) · [What ships](#what-ships) · [Use it](#use-it) · [Browse all skills](../README.md)
+[Why it exists](#why-this-exists) · [What ships](#what-ships) · [Use it](#use-it) · [Browse all skills](../../README.md)
 
 <br>
 
@@ -86,7 +86,7 @@ python scripts/page_speed_estimator.py page.html
 ## Inside the skill
 
 ```text
-landing-page-generator-skill/
+skills/landing-page-generator-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── assets/template.html
@@ -103,4 +103,4 @@ landing-page-generator-skill/
 
 ---
 
-[← Browse BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse BuildFast Skills](../../README.md) · [MIT licensed](../../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

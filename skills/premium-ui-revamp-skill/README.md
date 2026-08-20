@@ -4,7 +4,7 @@
 
 **Turn a generic or visibly AI-generated interface into a deliberate product while preserving its behavior and stack.**
 
-[Why it exists](#why-this-exists) · [What changes](#what-changes) · [Use it](#use-it) · [Browse all skills](../README.md)
+[Why it exists](#why-this-exists) · [What changes](#what-changes) · [Use it](#use-it) · [Browse all skills](../../README.md)
 
 <br>
 
@@ -82,7 +82,7 @@ The workflow supports HTML/CSS/JavaScript, React, Vue, Svelte, Next.js, and simi
 ## Inside the skill
 
 ```text
-premium-ui-revamp-skill/
+skills/premium-ui-revamp-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
 └── references/
@@ -92,4 +92,4 @@ premium-ui-revamp-skill/
 
 ---
 
-[← Browse BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)
+[← Browse BuildFast Skills](../../README.md) · [MIT licensed](../../LICENSE) · [View the repository](https://github.com/buildfastwithai/buildfast-skills)

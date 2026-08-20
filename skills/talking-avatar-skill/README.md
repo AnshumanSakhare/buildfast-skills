@@ -4,7 +4,7 @@
 
 **Build a lightweight realtime voice app whose character mouth follows the actual remote audio stream.**
 
-[Proof](#proof) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../README.md)
+[Proof](#proof) · [What you get](#what-you-get) · [Use it](#use-it) · [Browse all skills](../../README.md)
 
 <br>
 
@@ -90,7 +90,7 @@ Then supply a portrait or describe the character and product:
 ## Inside the skill
 
 ```text
-talking-avatar-skill/
+skills/talking-avatar-skill/
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── assets/starter/
@@ -105,4 +105,4 @@ talking-avatar-skill/
 
 ---
 
-[← Browse BuildFast Skills](../README.md) · [MIT licensed](../LICENSE) · [View the standalone skill](https://github.com/buildfastwithai/talking-avatar)
+[← Browse BuildFast Skills](../../README.md) · [MIT licensed](../../LICENSE) · [View the standalone skill](https://github.com/buildfastwithai/talking-avatar)

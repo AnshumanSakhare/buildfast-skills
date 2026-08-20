@@ -6,7 +6,7 @@
 
 One focused workflow. The real project. A verified handoff.
 
-[Browse the collection](#choose-your-build) · [Install](#install) · [How it works](#the-buildfast-recipe) · [Contribute](CONTRIBUTING.md)
+[Browse the collection](#choose-your-build) · [Install](#install) · [How it works](#the-buildfast-recipe)
 
 <br>
 
@@ -38,17 +38,17 @@ There is no framework to adopt and no hosted service to depend on. Pick the outc
 
 | Skill | Start here when you need… | Finished means… |
 |:--|:--|:--|
-| **[Crazy Ecommerce Builder](crazy-ecommerce-builder-skill/)** | A storefront with a memorable, product-specific creative thesis | Original visual system, responsive commerce UI, usable cart, and a passing production build |
-| **[Landing Page Generator](landing-page-generator-skill/)** | A focused campaign, launch, signup, or lead-capture page | One production-ready HTML file with conversion, CTA, and likely-speed audits |
-| **[Premium UI Revamp](premium-ui-revamp-skill/)** | A working interface that feels generic, dated, or visibly AI-generated | Implemented redesign that preserves behavior and survives build, access, and responsive checks |
-| **[Talking Avatar](talking-avatar-skill/)** | Realtime voice chat with an audio-driven character | Runnable app, safe session negotiation, mouth poses tied to remote audio, and regression tests |
-| **[Three.js Game Generator](threejs-game-generator-skill/)** | An original 3D browser game or an unfinished Three.js scene | A small complete game loop with controls, states, audio, persistence, and playthrough proof |
+| **[Crazy Ecommerce Builder](skills/crazy-ecommerce-builder-skill/)** | A storefront with a memorable, product-specific creative thesis | Original visual system, responsive commerce UI, usable cart, and a passing production build |
+| **[Landing Page Generator](skills/landing-page-generator-skill/)** | A focused campaign, launch, signup, or lead-capture page | One production-ready HTML file with conversion, CTA, and likely-speed audits |
+| **[Premium UI Revamp](skills/premium-ui-revamp-skill/)** | A working interface that feels generic, dated, or visibly AI-generated | Implemented redesign that preserves behavior and survives build, access, and responsive checks |
+| **[Talking Avatar](skills/talking-avatar-skill/)** | Realtime voice chat with an audio-driven character | Runnable app, safe session negotiation, mouth poses tied to remote audio, and regression tests |
+| **[Three.js Game Generator](skills/threejs-game-generator-skill/)** | An original 3D browser game or an unfinished Three.js scene | A small complete game loop with controls, states, audio, persistence, and playthrough proof |
 
 ## See the range
 
 | A real storefront built by the commerce skill | A premium-interface transformation direction | A real voice-avatar app built by the avatar skill |
 |:--:|:--:|:--:|
-| <img src="crazy-ecommerce-builder-skill/assets/readme/strata-products.webp" alt="STRATA product collection" width="100%"> | <img src="premium-ui-revamp-skill/assets/readme/revamp-direction.webp" alt="Premium UI transformation visual" width="100%"> | <img src="talking-avatar-skill/assets/readme/aiko-desktop.webp" alt="Aiko realtime voice avatar app" width="100%"> |
+| <img src="skills/crazy-ecommerce-builder-skill/assets/readme/strata-products.webp" alt="STRATA product collection" width="100%"> | <img src="skills/premium-ui-revamp-skill/assets/readme/revamp-direction.webp" alt="Premium UI transformation visual" width="100%"> | <img src="skills/talking-avatar-skill/assets/readme/aiko-desktop.webp" alt="Aiko realtime voice avatar app" width="100%"> |
 | **Commerce proof** | **Revamp direction** | **Realtime proof** |
 
 The storefront and avatar images are captured from real Build Fast with AI example apps. The interface transformation is an editorial direction visual, clearly separated from product proof.
@@ -88,12 +88,16 @@ Copy the complete `*-skill` folder into your assistant's skills directory. Keep 
 
 ```text
 buildfast-skills/
-├── crazy-ecommerce-builder-skill/
-├── landing-page-generator-skill/
-├── premium-ui-revamp-skill/
-├── talking-avatar-skill/
-├── threejs-game-generator-skill/
-├── CONTRIBUTING.md
+├── assets/
+│   └── readme/
+│       └── collection-hero.webp
+├── skills/
+│   ├── crazy-ecommerce-builder-skill/
+│   ├── landing-page-generator-skill/
+│   ├── premium-ui-revamp-skill/
+│   ├── talking-avatar-skill/
+│   └── threejs-game-generator-skill/
+├── .gitignore
 ├── LICENSE
 └── README.md
 ```
@@ -124,13 +128,9 @@ This repository intentionally contains no deploy or CI setup. Confirm local disc
 
 ```bash
 npx skills add . --list
-python -m compileall -q landing-page-generator-skill/scripts
-python -m compileall -q talking-avatar-skill/scripts
+python -m compileall -q skills/landing-page-generator-skill/scripts
+python -m compileall -q skills/talking-avatar-skill/scripts
 ```
-
-## Contributing
-
-Improvements are welcome—especially tighter triggers, stronger verification, practical references, and scripts that replace repeated guesswork. Read [CONTRIBUTING.md](CONTRIBUTING.md), keep each change focused, and include the local checks you ran.
 
 ## License
 
