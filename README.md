@@ -76,14 +76,6 @@ Add `--global` to make it available across projects, then restart your agent and
 
 Copy the complete `*-skill` folder into your assistant's skills directory. Keep the folder intact so `references/`, `scripts/`, and `assets/` remain available. If the assistant has no skill system, attach `SKILL.md` and the files it links to.
 
-## The BuildFast recipe
-
-1. **Name the outcome.** Choose the skill that owns the finish line.
-2. **Share the real brief.** Include audience, constraints, existing stack, proof, assets, and integrations.
-3. **Let the skill decide.** It loads only the references needed for the current mode and works inside the project.
-4. **Verify the product.** The relevant build, audit, browser flow, or playthrough must pass.
-5. **Handoff honestly.** You get the result, commands run, assumptions made, and anything still requiring your input.
-
 ## What is inside
 
 ```text
