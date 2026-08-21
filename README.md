@@ -2,7 +2,7 @@
 
 # BuildFast Skills
 
-** production-grade Agent Skills for turning plain-language briefs into finished web experiences.**
+Production-grade Agent Skills for turning plain-language briefs into finished web experiences.
 
 One focused workflow. The real project. A verified handoff.
 
